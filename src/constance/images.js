@@ -1,5 +1,6 @@
-import logoImg from "../assets/images/logo.png";
-import headerImg from "../assets/images/header-img.png";
+import headerLogoImg from "../assets/images/headerLogo-img.png";
+import headerImg1 from "../assets/images/header-img1.png";
+import headerImg2 from "../assets/images/header-img2.png";
 
 import aboutImg from "../assets/images/about-img.png";
 import signImg from "../assets/images/sign-img.png";
@@ -19,10 +20,11 @@ import workImg7 from "../assets/images/work-img7.png";
 import workImg8 from "../assets/images/work-img8.png";
 
 export default{
-    headerImg,
+    headerLogoImg,
+    headerImg1,
+    headerImg2,
     aboutImg,
     signImg,
-    logoImg,
     serviceIcon1,
     serviceIcon2,
     serviceIcon3,

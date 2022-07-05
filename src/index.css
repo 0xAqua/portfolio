@@ -1,5 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/zapfino-extra-lt');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -9,6 +9,7 @@
 
 body {
   background: var(--bgColorBlack);
+  color: #fff;
 }
 
 a {
@@ -70,7 +71,8 @@ font-family: 'Zapfino Forte LT', sans-serif;
 .numberContents {
   position: absolute;
   bottom: 3rem;
-  right: 0rem;
+  right: 5rem;
+  z-index: 700;
   display: flex;
 }
 
@@ -86,10 +88,11 @@ font-family: 'Zapfino Forte LT', sans-serif;
 @media screen and (max-width: 992px) {
   .numberContents {
       right: 3rem;
+      bottom: 4rem;
   }
 }
 
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 600px) {
   .numberContents span {
       font-size: 5rem;
   }

@@ -1,13 +1,98 @@
-body {
+@import url('http://fonts.cdnfonts.com/css/zapfino-extra-lt');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: var(--bgColorBlack);
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+/* ===========================Setting========================= */
+
+/* ===========================Variable======================== */
+
+:root {
+  --border: 1px solid #fff;
+  --japanLangStyle: "游明朝体","YuMincho";
+  --englishLangStyle: 'Roboto Slab', serif;
+  --letterSpacing: 1px;
+  --transition: all ease;
+  --bgColorBlack: #000;
+  --bgColorWhite: #fff;
+  --mainTextColor: #fff;
+}
+
+/* =======================Variable of End===================== */
+
+/* ====================Number Language Style================== */
+/*  
+font-family: 'Zapfino Extra LT', sans-serif;
+font-family: 'Zapfino Extra LT Pro', sans-serif;
+font-family: 'Zapfino Forte LT Pro', sans-serif;
+font-family: 'Zapfino Forte LT', sans-serif;
+ */
+ /* =========================================================== */
+
+
+/* =============================Common========================= */
+
+.Setting {
+  min-height: 100vh;
+}
+
+.Container {
+  max-width: 1177px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.numberContents {
+  position: absolute;
+  bottom: 3rem;
+  right: 0rem;
+  display: flex;
+}
+
+.numberContents span {
+  display: block;
+  font-size: 7rem;
+  font-family: 'Zapfino Extra LT', sans-serif;
+  font-family: 'Zapfino Extra LT Pro', sans-serif;
+  font-family: 'Zapfino Forte LT Pro', sans-serif;
+  font-family: 'Zapfino Forte LT', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .numberContents {
+      right: 3rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .numberContents span {
+      font-size: 5rem;
+  }
+  
+}
+/* =========================Common of End======================= */

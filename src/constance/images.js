@@ -2,6 +2,7 @@ import headerLogoImg from "../assets/images/headerLogo-img.png";
 import headerImg1 from "../assets/images/header-img1.png";
 import headerImg2 from "../assets/images/header-img2.png";
 
+
 import aboutImg from "../assets/images/about-img.png";
 import signImg from "../assets/images/sign-img.png";
 

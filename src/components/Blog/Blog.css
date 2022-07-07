@@ -1,0 +1,10 @@
+.blogContainer {
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: var(--japanLangStyle);
+}
+
+.tab {
+    background: #fff;
+}

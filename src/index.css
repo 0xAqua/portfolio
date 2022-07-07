@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .3s var(--transition);
+  -webkit-transition: .3s var(--transition);
+  -moz-transition: .3s var(--transition);
+  -ms-transition: .3s var(--transition);
+  -o-transition: .3s var(--transition);
 }
 
 body {
@@ -42,6 +47,7 @@ h1, h2, h3, h4, h5 {
   --bgColorBlack: #000;
   --bgColorWhite: #fff;
   --mainTextColor: #fff;
+  --commonFontSizeP: 13px;
 }
 
 /* =======================Variable of End===================== */
@@ -63,39 +69,61 @@ font-family: 'Zapfino Forte LT', sans-serif;
 }
 
 .Container {
-  max-width: 1177px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 6rem 0;
   position: relative;
 }
 
-.numberContents {
+.Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SectionTitle {
+  text-align: center;
+}
+.SectionTitle  h2 {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  letter-spacing: var(--letterSpacing);
+  font-family: var(--japanLangStyle);
+  width: 120px;
+}
+
+.SectionTitle  h2::after,
+.SectionTitle  h2::before {
+  content: "";
   position: absolute;
-  bottom: 3rem;
-  right: 5rem;
-  z-index: 700;
-  display: flex;
+  height: 5px;
+  background: var(--bgColorWhite);
+  width: 30px;
 }
 
-.numberContents span {
-  display: block;
-  font-size: 7rem;
-  font-family: 'Zapfino Extra LT', sans-serif;
-  font-family: 'Zapfino Extra LT Pro', sans-serif;
-  font-family: 'Zapfino Forte LT Pro', sans-serif;
-  font-family: 'Zapfino Forte LT', sans-serif;
+.SectionTitle  h2::after {
+  top: 50%;
+  right: 0%;
+  transform: translate(15%, -50%);
+  -webkit-transform: translate(15%, -50%);
+  -moz-transform: translate(15%, -50%);
+  -ms-transform: translate(15%, -50%);
+  -o-transform: translate(15%, -50%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-@media screen and (max-width: 992px) {
-  .numberContents {
-      right: 3rem;
-      bottom: 4rem;
-  }
+.SectionTitle  h2::before {
+  top: 50%;
+  left: 0%;
+  transform: translate(-15%, -50%);
+  -webkit-transform: translate(-15%, -50%);
+  -moz-transform: translate(-15%, -50%);
+  -ms-transform: translate(-15%, -50%);
+  -o-transform: translate(-15%, -50%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .numberContents span {
-      font-size: 5rem;
-  }
-  
-}
 /* =========================Common of End======================= */

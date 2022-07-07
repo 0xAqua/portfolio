@@ -5,16 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: .3s var(--transition);
-  -webkit-transition: .3s var(--transition);
-  -moz-transition: .3s var(--transition);
-  -ms-transition: .3s var(--transition);
-  -o-transition: .3s var(--transition);
 }
 
 body {
   background: var(--bgColorBlack);
   color: #fff;
+  transition: .3s var(--transition);
+  -webkit-transition: .3s var(--transition);
+  -moz-transition: .3s var(--transition);
+  -ms-transition: .3s var(--transition);
+  -o-transition: .3s var(--transition);
 }
 
 a {
@@ -90,7 +90,8 @@ font-family: 'Zapfino Forte LT', sans-serif;
   margin: 1rem 0;
   letter-spacing: var(--letterSpacing);
   font-family: var(--japanLangStyle);
-  width: 120px;
+  padding: 0 32px;
+  text-transform: uppercase;
 }
 
 .SectionTitle  h2::after,

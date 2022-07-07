@@ -1,0 +1,77 @@
+.work {
+    background: red;
+}
+
+.workContainer {
+    padding: 1.5rem 0 ;
+}
+
+.workContent {
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+}
+
+.workContent h3 {
+    font-size: 18px;
+    font-family: var(--japanLangStyle);
+    margin: 8px 0;
+}
+
+.workImage {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 50px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 17px;
+    height: 380px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: #ff2911; 
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    outline: 0;
+}
+.swiper-button-prev::after {
+    font-size: 18px;
+    padding-right: 3px;
+}
+
+
+.swiper-button-next:after {
+    position: relative;
+    font-size: 18px;
+    padding-left: 3px;
+
+}

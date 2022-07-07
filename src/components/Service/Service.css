@@ -1,0 +1,38 @@
+.service {
+    background: #000;
+
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--japanLangStyle);
+    padding: 3rem 0;
+}
+
+.serviceContents {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    text-align: center;
+    gap: 40px;
+}
+
+.serviceIconTitle {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.serviceIconText {
+    text-align: left;
+    font-size: var(--commonFontSizeP);
+}
+
+@media screen and (max-width: 992px) {
+    .serviceContents {
+        grid-template-columns: 160px 160px;
+
+    }
+}

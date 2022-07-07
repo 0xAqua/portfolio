@@ -6,14 +6,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Work.css"
 import images from "../../constance/images";
-import data from "../../constance/data";
 
 const Work = () => {
   return (
     <section className="work">
       <div className="Container workContainer">
         <div className="SectionTitle">
-          <h2>Service</h2>
+          <h2>WORK</h2>
         </div>
         <Swiper
           slidesPerView={1}

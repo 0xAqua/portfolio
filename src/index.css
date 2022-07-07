@@ -87,7 +87,7 @@ font-family: 'Zapfino Forte LT', sans-serif;
 .SectionTitle  h2 {
   position: relative;
   display: inline-block;
-  margin: 1rem 0;
+  margin: 1rem 0 1.7rem 0;
   letter-spacing: var(--letterSpacing);
   font-family: var(--japanLangStyle);
   padding: 0 32px;

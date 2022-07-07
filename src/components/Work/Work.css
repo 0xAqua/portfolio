@@ -1,5 +1,6 @@
 .work {
-    background: red;
+    /* background: red; */
+    margin: 6rem 0;
 }
 
 .workContainer {
@@ -24,6 +25,7 @@
     padding: 0 50px;
     height: 330px;
     margin: 0 auto;
+    position: relative;
 }
 
 .swiper {
@@ -35,7 +37,6 @@
     text-align: center;
     padding-bottom: 17px;
     height: 380px;
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -73,5 +74,8 @@
     position: relative;
     font-size: 18px;
     padding-left: 3px;
+}
 
+.swiper-pagination-bullet {
+    background-color: #fff;
 }

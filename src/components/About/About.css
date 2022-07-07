@@ -1,0 +1,71 @@
+.aboutContents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutImage {
+    max-width: 600px;
+    width: 100%;
+    height: 430px;
+}
+
+.aboutSelfIntroduction {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 12px;
+    font-family: var(--japanLangStyle);
+    letter-spacing: var(--letterSpacing);
+    opacity: 0.7;
+}
+
+.name {
+    margin-bottom: 12px;
+}
+
+.about h3 {
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+
+.about span {
+    font-size: 10px;
+    letter-spacing: 9px;
+}
+
+.about p {
+    font-size: var(--commonFontSizeP);
+    margin-bottom: 12px;
+}
+
+.career p {
+    line-height: 25px;
+}
+
+.skill h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .aboutContents {
+        flex-wrap: wrap;
+    }
+    .name {
+        margin: 20px 0 12px 0;
+    }
+    .aboutImage {
+        height: 380px;
+    }
+    .aboutSelfIntroduction {
+        max-width: 650px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .aboutSelfIntroduction {
+        padding: 0 5vw;
+    }
+}

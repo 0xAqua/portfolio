@@ -4,10 +4,10 @@ import './About.css';
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="Container">
         <div className="SectionTitle">
-          <h2>WORK</h2>
+          <h2>About</h2>
         </div>
         <div className="aboutContents">
           <div className="aboutImage">

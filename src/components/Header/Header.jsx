@@ -6,16 +6,12 @@ import {GiButterflyFlower} from 'react-icons/gi';
 const Header = () => {
   return (
     <section className='header'>
-        <div className="headerContainer">
             <div className="headerTitle">
-                <h1>TSUJI KODAI</h1>
+                <h1>KODAI TSUJI</h1>
             </div>
+        <div className="headerContainer">
             <div className="headerSign">
                 <img src={images.signImg} alt="辻航大のサイン" className="headerImg" />
-            </div>
-            <div className="numberContents">
-                <GiButterflyFlower  size={24}/>
-                <span className="number">01</span>
             </div>
             <div className="headerContents">
                 <div className="headerImages">

@@ -37,5 +37,5 @@ export default{
     workImg5,
     workImg6,
     workImg7,
-    workImg8
+    workImg8,
 };

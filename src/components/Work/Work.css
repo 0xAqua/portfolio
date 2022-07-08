@@ -1,6 +1,5 @@
 .work {
-    /* background: red; */
-    margin: 6rem 0;
+    /* margin-top: 2rem; */
 }
 
 .workContainer {
@@ -16,7 +15,7 @@
 .workContent h3 {
     font-size: 18px;
     font-family: var(--japanLangStyle);
-    margin: 8px 0;
+    margin: 10px 0;
 }
 
 .workImage {
@@ -78,4 +77,13 @@
 
 .swiper-pagination-bullet {
     background-color: #fff;
+}
+
+.WorkLink:hover {
+    opacity: 0.8;
+    transition: .6s var(--transition);
+    -webkit-transition: .6s var(--transition);
+    -moz-transition: .6s var(--transition);
+    -ms-transition: .6s var(--transition);
+    -o-transition: .6s var(--transition);
 }

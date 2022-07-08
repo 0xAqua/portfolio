@@ -23,7 +23,7 @@ const services = [
     }
 ]
 
-const work = [
+const works = [
     {
         img: `${images.workImg1}`,
         title: "Web Site",
@@ -54,9 +54,11 @@ const work = [
         title: "Data Analysis",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo, sapiente dicta placeat minus aliquam quasi rerum labore nisi deleniti numquam!"
     }
+    
 ]
 
 
 export default {
-    services
+    services,
+    works
 };

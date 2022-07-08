@@ -5,11 +5,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Work.css"
-import images from "../../constance/images";
+import data from "../../constance/data";
 
 const Work = () => {
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="Container workContainer">
         <div className="SectionTitle">
           <h2>WORK</h2>
@@ -26,46 +26,24 @@ const Work = () => {
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
-        <SwiperSlide>
-            <div className="workContent">
-              <div className="workImage">
-                <img src={images.workImg1} alt="作成した作品の画像" className="Img" />
-              </div>
-              <h3>Web Site</h3>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workContent">
-            <div className="workImage">
-              <img src={images.workImg2} alt="作成した作品の画像" className="Img" />
-            </div>
-            <h3>Web Site</h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workContent">
-            <div className="workImage">
-              <img src={images.workImg3} alt="作成した作品の画像" className="Img" />
-            </div>
-            <h3>Web Site</h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workContent">
-            <div className="workImage">
-              <img src={images.workImg4} alt="作成した作品の画像" className="Img" />
-            </div>
-            <h3>Web Site</h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="workContent">
-            <div className="workImage">
-              <img src={images.workImg5} alt="作成した作品の画像" className="Img" />
-            </div>
-            <h3>Web Site</h3>
-          </div>
-        </SwiperSlide>
+          <>
+            {
+              data.works.map((work, index) => {
+                return (
+                  <SwiperSlide>
+                    <a href="" className="WorkLink">
+                      <div className="workContent" key={index}>
+                        <div className="workImage">
+                          <img src={work.img} alt="作成した作品の画像" className="Img" />
+                        </div>
+                        <h3>{work.title}</h3>
+                      </div>
+                    </a>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </>
       </Swiper>
         </div>        
     </section>

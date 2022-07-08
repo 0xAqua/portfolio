@@ -106,15 +106,16 @@
     position: fixed;
     top: 0;
     right: -100%;
-    background: rgba(0, 0, 0, 0.88);
+    background: rgba(160, 160, 160, 0.88);
     text-align: center;
-    padding: 13vh 0;
+    padding: 18vh 0;
     width: 100%;
     height: 100vh;
     z-index: 900;
+    letter-spacing: 4px;
     display: flex;
     justify-content: center;
-    font-size: 34px;
+    font-size: 30px;
     transition: .8s var(--transition);
     -webkit-transition: .8s var(--transition);
     -moz-transition: .8s var(--transition);
@@ -130,6 +131,17 @@
     margin-bottom: 20px;
 }
 
+.menuNavbarListItem a {
+    transition: .7s var(--transition);
+    -webkit-transition: .7s var(--transition);
+    -moz-transition: .7s var(--transition);
+    -ms-transition: .7s var(--transition);
+    -o-transition: .7s var(--transition);
+}
+
+.menuNavbarListItem a:hover {
+    color: black;
+}
 
 /* ======================Menu of End====================== */
 

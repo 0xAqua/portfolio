@@ -31,7 +31,7 @@ const Blog = () => {
         backgroundColor: "#00695f",
     }
     return (
-    <section className="blog">
+    <section className="blog" id="blog">
         <div className="Container blogContainer">
             <div className="SectionTitle">
                 <h2>Blog</h2>

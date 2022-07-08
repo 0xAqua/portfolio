@@ -1,8 +1,6 @@
 import React from 'react';
 import data from '../../constance/data';
 import "./Service.css";
-import {GiFlowerTwirl} from "react-icons/gi"
-
 
 const Service = () => {
     return (
@@ -26,10 +24,6 @@ const Service = () => {
                     })
                 }
             </div>
-            {/* <div className="numberContents">
-                <GiFlowerTwirl  size={24}/>
-                <p className="number">03</p>
-            </div> */}
         </div>
         </section>
     )

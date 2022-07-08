@@ -1,0 +1,95 @@
+.contact {
+}
+
+.contactContent {
+    /* padding: 0 5vw; */
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+/* ======================== Form ======================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0 14px;
+    margin: 1px 0;
+    border: none;
+    background: transparent;
+    resize: none;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    background: rgb(27, 60, 158);
+    font-family: var(--japanLangStyle);
+}
+
+textarea::placeholder,
+input::placeholder {
+    opacity: .7;
+    color: #fff;
+    font-size: var(--commonFontSizeP);
+}
+
+textarea {
+    padding: 18px 14px;
+}
+
+input {
+    height: 60px;
+}
+
+.formInput:focus {
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.msgBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+}
+
+.msgBtn p {
+    font-size: 10px;
+}
+
+.msgBtn input {
+    width: 150px;
+    height: 45px;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s var(--transition);
+    -webkit-transition: .3s var(--transition);
+    -moz-transition: .3s var(--transition);
+    -ms-transition: .3s var(--transition);
+    -o-transition: .3s var(--transition);
+}
+
+.msgBtn input:hover {
+    background: #fff;
+    color: rgb(27, 60, 158);
+}
+
+
+@media screen and (max-width: 600px) {
+    .msgBtn p {
+        display: none;
+    }
+    .msgBtn input {
+        width: 100%;
+        height: 60px;
+    }
+    .contactContent {
+        padding: 0 2vw;
+    }
+}

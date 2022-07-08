@@ -20,6 +20,8 @@ import workImg6 from "../assets/images/work-img6.png";
 import workImg7 from "../assets/images/work-img7.png";
 import workImg8 from "../assets/images/work-img8.png";
 
+import modalWindowImg from "../assets/images/modal-window.png";
+
 export default{
     headerLogoImg,
     headerImg1,
@@ -38,4 +40,5 @@ export default{
     workImg6,
     workImg7,
     workImg8,
+    modalWindowImg,
 };

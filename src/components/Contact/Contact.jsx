@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import ModalWindow from '../../Model/ModalWindow/ModalWindow';
+import ModalWindow from '../Models/ModalWindow';
 import { useState } from 'react';
 import './Contact.css'
 
@@ -49,7 +49,7 @@ return (
             </form>
             </div>
         </div>
-        {/* <ModalWindow showFlag={showModal} setShowModal={setShowModal} /> */}
+        <ModalWindow showFlag={showModal} setShowModal={setShowModal} />
     </section>
 )
 }
